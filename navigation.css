@@ -1,0 +1,79 @@
+.bot-navbar {
+    width: auto;
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 4%;
+}
+
+.bot-navbar li {
+    float: left;
+}
+
+.bot-navbar li button {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: transparent;
+    color: var(--text-white);
+}
+
+#firebtn:hover {
+    color: var(--fire);
+    scale: 1.3;
+    transition: all .1s ease;
+}
+
+
+#waterbtn:hover {
+    color: var(--water);
+    scale: 1.3;
+    transition: all .1s ease;
+}
+
+
+#earthbtn:hover {
+    color: var(--earth);
+    scale: 1.3;
+    transition: all .1s ease;
+}
+
+
+#windbtn:hover {
+    color: var(--wind);
+    scale: 1.3;
+    transition: all .1s ease;
+}
+
+.el4-btn {
+    border: 0px;
+    margin: 0 1rem;
+    background: none;
+    padding: 1rem;
+    max-width: 100px;
+    font-weight: 1000;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0.3;
+    color: var(--text-white);
+}
+
+.el4-btn:hover,
+.el4-btn:focus {
+    transform: scale(1.5);
+    transition: 300ms all;
+    opacity: 1;
+    outline: none;
+}
+
+.selected-icon {
+    opacity: 1;
+}

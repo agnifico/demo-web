@@ -1,0 +1,25 @@
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+}
+
+.colored-scrollbar {
+    scrollbar-color: rgb(255, 255, 255, .3) rgb(0, 0, 0, 0);
+    -webkit-scrollbar-color: rgb(255, 255, 255, .3) rgb(0, 0, 0, 0);
+    scrollbar-track-color: yellowgreen;
+    scrollbar-gutter: stable both-edges;
+    -webkit-scrollbar-gutter: stable both-edges;
+}

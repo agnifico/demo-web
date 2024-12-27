@@ -1,0 +1,15 @@
+
+#water-header-text-layer {
+    z-index: 2;
+    --parallax-speed: 10;
+    animation: water-header linear;
+    animation-timeline: scroll();
+    color: #183642;
+}
+
+@keyframes water-header {
+    10%, 90% {
+        transform: translateY(calc(var(--parallax-speed) * 10rem));
+        opacity: 0;
+    }
+}

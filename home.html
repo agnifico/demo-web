@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <title>June's Forge // @agnifico </title>
+
+
+
+    <link rel="stylesheet" href="main_styles.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="extras.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="water.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"
+        integrity="sha512-B8ruywf8mKA4fm0K8SrrNhO5DTokuipFEo7rEnI0RVTt9p29MJKfg8TfOVwMAFZxgI+zOF4iwOA/ByvyJ/sslw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- CURSOR  -->
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+
+    <!-- TOP LOGO JxnesForge -->
+    <div class="top-logo">
+        <a href="https://agnifico.github.io/juneweb/" class="hoverable">「 jxnes<span class="forge">forge 」</span>
+        </a>
+    </div>
+    <div class="element" id="divwater" style="display: none;">
+        <div class="theatre hide-scrollbar">
+            <div class="slide scroll-snap-top parallax">
+                <div class="header" id="water-header-text-layer">
+                    Water : Interwoven Fates
+                </div>
+                <img src="WF.svg" id="water-header-image-layer">
+            </div>
+            <div class="slide scroll-snap-top flex-center">
+                <p class="main-text">
+                    The combination of being an Indian Bengali boy with a hardworking but traditional parent resulted in
+                    a not
+                    so surprising outcome.
+
+                    I have spent most of my life studying to be a software developer, followed by being one. However,
+                    when one
+                    gets an unexpected push in life, it makes one think. Turns out, <span class="underline"
+                        data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top"
+                        data-bs-custom-class="custom-popover" data-bs-title="In hindsight..."
+                        data-bs-content="Should have left earlier. The whole organisation was a sinking ship, only saved by HPE :P">7
+                        years in tech</span>, is all I could take.
+                </p>
+            </div>
+            <div class="slide scroll-snap-top flex-center">
+                <p class="main-text">
+                    I quit my life in corporate computer science in early 2024, and decided to give myself the space to
+                    figure
+                    out (at the risk of sounding extremely cliched) about what would make me happy.
+
+                </p>
+            </div>
+            <div class="slide scroll-snap-top flex-center">
+                <p class="main-text">
+
+                    You see, I really enjoy everything about creating/building things. Creating art really gives me joy.
+                    But so
+                    does building stuff with code. It's just the corporate stuff I wasn't totally into.
+                </p>
+            </div>
+            <div class="slide scroll-snap-top flex-center">
+                <p class="main-text">
+                    However, I feel that the word artist is perhaps too restricting. I want to be a designer. The next
+                    logical
+                    prompt would be - design what?<br>
+                    The world.
+
+                </p>
+            </div>
+            <div class="slide scroll-snap-top flex-center">
+                <p class="main-text">
+
+                    Before you roll your eyes, hear me out. I see the world as an ever-moving, interwoven machine. All
+                    its
+                    components, small and large, influence each other. So, by working on one, I am invariably bound to
+                    impact
+                    the other. And that is what I want to do going forward. I want to be impactful.
+                </p>
+            </div>
+            <div class="slide scroll-snap-top flex-center">
+                <p class="main-text">
+                    Starting with well-thought out graphics, moving into products and processes, and then curricula.
+                    Funnily enough, it seems that my <span class="underline water" data-bs-toggle="popover"
+                        data-bs-trigger="hover" data-bs-placement="right" data-bs-custom-class="custom-popover"
+                        data-bs-title="B.Tech, CCE, 2019"
+                        data-bs-content="Manipal Institute of Technology, Manipal, KA. BEST FKN TIME!">4 year degree in
+                        Computer
+                        Science</span> is going to come into clutch to
+                    understand how the world of design works.
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="element" id="divfire" style="display: block;">
+        <div class="theatre hide-scrollbar">
+            <div class="slide scroll-snap-top parallax">
+                <div class="header">
+                    Fire : The Forge of an Empire
+                </div>
+                <img src="WF.svg">
+            </div>
+            <div class="slide scroll-snap-top flex-center">
+                <p class="main-text">
+                    The combination of being an Indian Bengali boy with a hardworking but traditional parent resulted in
+                    a not
+                    so surprising outcome.
+
+                    I have spent most of my life studying to be a software developer, followed by being one. However,
+                    when one
+                    gets an unexpected push in life, it makes one think. Turns out, 7 years in tech, is all I could
+                    take.
+                </p>
+            </div>
+            <div class="slideshow scroll-snap-top hide-scrollbar">
+                <div class="slide scroll-snap-top">
+                    <p class="main-text">
+                        Hey June
+
+                    </p>
+                </div>
+                <div class="slide scroll-snap-top">
+                    <p class="main-text">
+                        Hey June
+
+                    </p>
+                </div>
+                <div class="slide scroll-snap-top">
+                    <p class="main-text">
+
+                        Hey June
+                    </p>
+                </div>
+            </div>
+            <div class="slide scroll-snap-top">
+                <p class="main-text">
+                    I quit my life in corporate computer science in early 2024, and decided to give myself the space to
+                    figure
+                    out (at the risk of sounding extremely cliched) about what would make me happy.
+
+                </p>
+            </div>
+            <div class="slide scroll-snap-top">
+                <p class="main-text">
+
+                    You see, I really enjoy everything about creating/building things. Creating art really gives me joy.
+                    But so
+                    does building stuff with code. It's just the corporate stuff I wasn't totally into.
+                </p>
+            </div>
+            <div class="slide scroll-snap-top">
+                <p class="main-text">
+                    However, I feel that the word artist is perhaps too restricting. I want to be a designer. The next
+                    logical
+                    prompt would be - design what?<br>
+                    The world.
+
+                </p>
+            </div>
+            <div class="slide scroll-snap-top">
+                <p class="main-text">
+
+                    Before you roll your eyes, hear me out. I see the world as an ever-moving, interwoven machine. All
+                    its
+                    components, small and large, influence each other. So, by working on one, I am invariably bound to
+                    impact
+                    the other. And that is what I want to do going forward. I want to be impactful.
+                </p>
+            </div>
+            <div class="slide scroll-snap-top">
+                <p class="main-text">
+                    Starting with well-thought out graphics, moving into products and processes, and then curricula.
+                    Funnily enough, it seems that my 4 year degree in Computer Science is going to come into clutch to
+                    understand how the world of design works.
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="element" id="divearth" style="display: none;">
+        <div class="theatre hide-scrollbar">
+            <div class="slide scroll-snap-top parallax">
+                <div class="header">
+                    Earth : The Memoirs of Civilisation
+                </div>
+                <img src="iso-2.svg">
+            </div>
+            <div class="slide scroll-snap-top flex-center">
+                <p class="main-text">
+                    Food. Clothes. Languages. Buildings. Climate. Markets.<br>
+                    Plants. Pets. Population. Ettiquettes. Families. Folktales.<br>
+                    Politics. Psychology. Math. Music. Architecture. Design.<br>
+                    The wind, the water, and the sky.<br>
+                    I strive to make my art reflective of the world, its intricacies, and the issues at hand. The whole
+                    world inspires my work.<br>
+                    And the idea is to influence the whole world, in turn.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="element" id="divwind" style="display: none;">
+        <div class="theatre hide-scrollbar">
+            <div class="slide parallax">
+                <div class="header">
+                    Wind : Ever-forward Journeys
+                </div>
+                <img src="air2.svg">
+                <img src="air3.svg" class="layer2">
+            </div>
+            <div class="slide flex-center">
+                <p class="main-text">
+                    One of my favourite characters from the world of gaming, Kaedehara Kazuha has a simple motto to deal
+                    with the vicissitudes of life that cause him to stop: Kaze no yukusaki yo. To the destination of the
+                    wind.
+                </p>
+            </div>
+            <div class="slideshow hide-scrollbar">
+                <div class="slide scroll-snap-top">
+                    <p class="main-text">
+                        Hey June
+
+                    </p>
+                </div>
+                <div class="slide scroll-snap-top">
+                    <p class="main-text">
+                        Hey June
+
+                    </p>
+                </div>
+                <div class="slide scroll-snap-top">
+                    <p class="main-text">
+
+                        Hey June
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <p class="main-text">
+                    I quit my life in corporate computer science in early 2024, and decided to give myself the space to
+                    figure
+                    out (at the risk of sounding extremely cliched) about what would make me happy.
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <ul class="bot-navbar" type="checkbox">
+
+        <li>
+            <button class="my-nav-link el4-btn hoverable" id="waterbtn" value="water">🜄</button>
+        </li>
+
+        <li>
+            <button class="my-nav-link el4-btn hoverable" id="windbtn" value="wind">🜁</button>
+        </li>
+
+        <li>
+            <button class="my-nav-link el4-btn hoverable" id="earthbtn" value="earth">🜃</button>
+        </li>
+
+        <li>
+            <button class="my-nav-link el4-btn hoverable" id="firebtn" value="fire">🜂</button>
+        </li>
+    </ul>
+
+
+    <!-- ------------------------ Scripts ------------------------------- -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        // var bgmain = '#242627';
+        // var bgnow = bgmain;
+        // var bgalt = '#1B4242';
+
+        // window.onload = function () {
+        //     var ex1 = document.getElementById('toggle-a');
+        //     var ex2 = document.getElementById('toggle-b');
+
+        //     ex1.onclick = handler;
+        //     ex2.onclick = handler;
+        // }
+
+        // function handler() {
+        //     if (bgnow == bgmain) {
+        //         document.body.style.background = bgalt;
+        //         bgnow = bgalt;
+        //     } else {
+        //         document.body.style.background = bgmain;
+        //         bgnow = bgmain;
+        //     }
+
+        // }
+
+        var lastDiv = document.getElementById('divfire');
+        var lastIcon = $('#firebtn');
+        lastIcon.addClass('selected-icon fire');
+
+        const icons4 = document.getElementsByClassName("el4-btn");
+        for (var i = 0, len = icons4.length; i < len; i++) {
+            icons4[i].onclick = function clickSelect(btn) {
+                lastIcon.removeClass('selected-icon' + ' ' + lastIcon[0].value);
+                lastIcon = $(this);
+                lastDiv.style.display = 'none';
+                lastDiv = document.getElementById('div' + $(this)[0].value);
+                lastDiv.style.display = 'block';
+                $(this).addClass('selected-icon' + ' ' + $(this)[0].value);
+            }
+
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        }
+
+        const $bigBall = document.querySelector('.cursor__ball--big');
+        // const $smallBall = document.querySelector('.cursor__ball--small');
+        const $hoverables = document.querySelectorAll('.hoverable');
+
+        // Listeners
+        document.addEventListener('mousemove', onMouseMove);
+        for (let i = 0; i < $hoverables.length; i++) {
+            if ((window.opener && !window.opener.closed)) break;
+            $hoverables[i].addEventListener('mouseenter', onMouseHover);
+            $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+        }
+
+        // Move the cursor
+        // window.CP.exitedLoop(0);
+
+        function onMouseMove(e) {
+            TweenMax.to($bigBall, .2, {
+                x: e.pageX - 10,
+                y: e.pageY - 10
+            });
+
+            // TweenMax.to($smallBall, .1, {
+            //   x: e.pageX - 5,
+            //   y: e.pageY - 7 });
+
+        }
+
+        // Hover an element
+        function onMouseHover() {
+            TweenMax.to($bigBall, .3, {
+                scale: 4
+            });
+
+        }
+        function onMouseHoverOut() {
+            TweenMax.to($bigBall, .3, {
+                scale: 1
+            });
+
+        }
+
+
+    </script>
+</body>
+
+</html>
