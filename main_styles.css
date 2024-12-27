@@ -20,7 +20,7 @@ html {
     min-height: 100svh;
     width: auto;
     cursor: default !important;
-    overflow-x: clip;
+    overflow-x: hidden;
 }
 
 body {
