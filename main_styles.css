@@ -110,7 +110,7 @@ a:hover {
     position: absolute;
     height: 100%;
     z-index: 9;
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: transparent;
     place-content: center;
     text-align: center;
@@ -122,7 +122,7 @@ a:hover {
     position: absolute;
     right: 0;
     height: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
     z-index: 9;
     /* background-color: aliceblue; */
     place-content: center;

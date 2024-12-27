@@ -8,6 +8,7 @@
     align-items: center;
     position: absolute;
     bottom: 4%;
+    background-color: #242627;
 }
 
 .bot-navbar li {
@@ -52,11 +53,8 @@
 }
 
 .el4-btn {
-    border: 0px;
-    margin: 0 1rem;
     background: none;
-    padding: 1rem;
-    max-width: 100px;
+    /* max-width: 100px; */
     font-weight: 1000;
     font-size: 40px;
     justify-content: center;
