@@ -208,17 +208,6 @@ a:hover {
     --parallax-speed: -2;
 }
 
-#water-header-image-layer {
-    height: 200%;
-    width: 200%;
-    object-fit: cover;
-    position: absolute;
-    top: -30%;
-    left: -50%;
-    z-index: 1;
-    --parallax-speed: -2;
-}
-
 .layer2 {
     z-index: 2;
     --parallax-speed: 10;
@@ -232,45 +221,8 @@ a:hover {
     }
 }
 
-@keyframes parallax40 {
-    to {
-        opacity: 0;
-        transform: translateY(calc(var(--parallax-speed) * 10rem));
-    }
-}
-
-@keyframes parallax20 {
-    10%, 20% {
-        transform: translateY(calc(var(--parallax-speed) * 10rem));
-    }
-}
-
 @keyframes parallax30 {
-    10%, 20% {
+    10%, 20%, 30%, 40% {
         transform: translate(30rem, calc(var(--parallax-speed) * 10rem));
-    }
-}
-
-@keyframes shake {
-
-    10%,
-    90% {
-        transform: translate3d(-1px, 0, 0);
-    }
-
-    20%,
-    80% {
-        transform: translate3d(2px, 0, 0);
-    }
-
-    30%,
-    50%,
-    70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-
-    40%,
-    60% {
-        transform: translate3d(4px, 0, 0);
     }
 }

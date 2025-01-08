@@ -1,14 +1,117 @@
+:root {
+    --bg: #242627;
+    --light-pink: #FFD0D0;
+    --pink: #FF9EAA;
+    --text-white: #F7F9F2;
+    --fire: #EB5353;
+    --water: #4D96FF;
+    --earth: #36AE7C;
+    --wind: #F7F48B;
+}
 
 #water-header-text-layer {
     z-index: 2;
     --parallax-speed: 10;
     animation: water-header linear;
     animation-timeline: scroll();
-    color: #183642;
+    color: var(--water);
+    mix-blend-mode: multiply;
+}
+
+#water-header-image-layer {
+    height: 200%;
+    width: 200%;
+    object-fit: cover;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    --parallax-speed: -2;
 }
 
 @keyframes water-header {
     10%, 90% {
+        transform: translateY(calc(var(--parallax-speed) * 10rem));
+        opacity: 0;
+    }
+}
+
+#fire-header-text-layer {
+    z-index: 3;
+    --parallax-speed: 1;
+    animation: fire-header linear;
+    animation-timeline: scroll();
+    color: var(--fire);
+    mix-blend-mode: screen;
+}
+
+#fire-header-image-layer {
+    height: 120%;
+    width: 120%;
+    object-fit: cover;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    z-index: 2;
+    --parallax-speed: -1;
+}
+
+@keyframes fire-header {
+    10%, 90%, 100% {
+        transform: translateY(calc(var(--parallax-speed) * 10rem));
+        opacity: 0;
+    }
+}
+
+#wind-header-text-layer {
+    z-index: 3;
+    --parallax-speed: 1;
+    animation: wind-header linear;
+    animation-timeline: scroll();
+    color: var(--wind);
+    mix-blend-mode: screen;
+}
+
+#wind-header-bg-layer {
+    height: 190%;
+    width: 190%;
+    object-fit: cover;
+    position: absolute;
+    top: -30%;
+    left: -50%;
+    z-index: 1;
+    --parallax-speed: -2;
+}
+
+@keyframes wind-header {
+    50%, 90%, 100% {
+        transform: translateY(calc(var(--parallax-speed) * 10rem));
+        opacity: 0;
+    }
+}
+
+#earth-header-text-layer {
+    z-index: 3;
+    --parallax-speed: 1;
+    animation: earth-header linear;
+    animation-timeline: scroll();
+    color: var(--earth);
+    mix-blend-mode: screen;
+}
+
+#earth-header-image-layer {
+    height: 120%;
+    width: 120%;
+    object-fit: cover;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    z-index: 2;
+    --parallax-speed: -1;
+}
+
+@keyframes earth-header {
+    30%, 90%, 100% {
         transform: translateY(calc(var(--parallax-speed) * 10rem));
         opacity: 0;
     }
